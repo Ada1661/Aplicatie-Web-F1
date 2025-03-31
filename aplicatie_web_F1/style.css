@@ -1,0 +1,346 @@
+#titlul-principal {
+    display:inline-block;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    font-size: 40px;
+    font-weight: 600;
+    background-image: linear-gradient(to left,  #c00707, #fff539);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    cursor: pointer;
+    transition: 2s;
+}
+
+#titlul-principal:hover {
+    color: #ff3939db;
+}
+
+.video {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+}
+
+.om {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.flex {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(200px, 5fr));
+    grid-gap: 1rem;
+    justify-content: space-between;
+    align-content: baseline;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+nav {
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.945);
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 0;
+    border-style: none;
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    user-select: none;
+}
+
+.meniu>li {
+   display: inline-block;
+   background-color: #ddb500;
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+.submeniu a {
+    display: block !important;
+}
+
+span:hover {
+    background-color: #dd0000;
+}
+
+.submeniu {
+    display: none;
+    font-size: 25px;
+    background-color: #ddb500;
+    position: absolute;
+    padding: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+nav li {
+    display: block;
+    border: 1px;
+}
+
+nav span {
+    display: block;
+    font-size: large;
+    padding: 10px;
+}
+
+nav span a {
+    font-size: large;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    padding: 7px;
+    text-decoration: none;
+    text-align: left;
+    font-size: medium;
+}
+
+a:hover {
+    background-color: #dd0000;
+}
+
+.meniu {
+    display: block;
+    background-color: #ddb500;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 6%;
+    border: 0;
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.logo:hover {
+    animation: rotation 1s linear forwards;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+body {
+    font-family: system-ui;
+    background-color: rgb(250, 34, 10);
+}
+
+main {
+    color: azure;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 8%;
+    background-color: rgba(0, 0, 0, 0.385);
+    backdrop-filter: blur(5px);
+
+}
+
+*{margin: 0;}
+
+h3 {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#descriere {
+    padding-bottom: 25px;
+}
+
+.titlul-secundar {
+    display: inline-block;
+    color: #ddb500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    
+}
+
+.titlul-secundar.move-right {
+    animation: moveRight 1s ease-in-out;
+}
+  
+@keyframes moveRight {
+0% {
+    left: 0;
+}
+50% {
+    left: 100px;
+}
+100% {
+    left: 0;
+}
+}
+
+.galerie {
+    display: flex;
+    gap: 25px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    height: 40vh;
+    align-items: end;
+}
+
+.galerie-img {
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px #000000f5;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.galerie img:hover {
+    transform: scale(1.09);
+    position: relative;
+}
+
+.galerie img.dim {
+    filter: brightness(50%);
+}
+.galerie::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.galerie::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.474);
+    border-radius: 10px;
+}
+
+.galerie::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#randomizeButton:hover {
+    color: rgb(255, 255, 255);
+}
+
+#randomizeButton {
+    padding: 10px;
+    margin: 2px;
+    transition: color 0.2s ease-in-out;
+    color: white;
+}
+
+.text p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+.citat {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.307);
+    border-radius: 20px;
+    font-style: italic;
+    font-size: larger;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.citat:hover {
+    transform: scale(1.008);
+}
+
+table, th, td {
+    border: 1px solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+td {
+    padding-left: 5px;
+}
+
+table {
+    width: 100%;
+}
+
+#tabel {
+    padding: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color:#ddb500;
+    position: relative;
+    border-radius: 50px;
+    margin: 10px;
+    box-shadow: 0px 2px 2px #000000f5;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    border: 1px solid #e7e1246d;
+    user-select: none;
+    font-family: verdana;
+    color: white;
+    padding: 3px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color:#880c0c;
+    transform: scale(1.07);
+    box-shadow: 0px 2px 20px #00000089;
+}
+
+#abonament {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.223);
+    border-radius: 20px;
+    font-style: italic;
+    font-size: larger;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+h4 {
+    font-size: small;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    color: rgba(255, 255, 255, 0.625);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#rTxt {
+    font-weight: bold;
+    font-size: large;
+    user-select: none;
+}
