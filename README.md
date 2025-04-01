@@ -1,3 +1,2 @@
-# Aplicatie Web F1
-
-O aplicație web interactivă dedicată fanilor de Formula 1 ai echipei Scuderia Ferrari, care oferă informații despre piloții echipei Scuderia Ferrari, precum și detalii despre evenimentele viitoare. Datele nu au mai fost actualizate deoarece acesta a fpst un proiect distractiv de testare a cunoștințelor proaspăt acumulate în realizarea aplicațiilor web.
+# F1 Web Application
+An interactive web application dedicated to Formula 1 fans of the Scuderia Ferrari team. It provides information about the team's drivers as well as details on upcoming events. The data has not been updated since this was a fun project to test my newly acquired web development skills.
